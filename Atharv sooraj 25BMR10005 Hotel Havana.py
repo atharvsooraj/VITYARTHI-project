@@ -116,7 +116,7 @@ def draw_booking():
             messagebox.showerror("Error", "All fields are required")
             return
 
-        if not (validate_date_obj(ci_date) and validate_date_obj(co_date)):
+        if not (validate_date_obj(checkin_date) and validate_date_obj(checkout_date)):
             messagebox.showerror("Error", "Enter valid dates in 2025-2027")
             return
 
@@ -294,3 +294,4 @@ root.configure(bg="#e6f2ff")
 
 draw_home()
 root.mainloop()
+
